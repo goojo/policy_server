@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "devices": {
+    "wifi": {
+      "name": "Wifi",
+      "type": "wifi",
+      "class": "NETWORK",
+      "ssid": "TMA",
+      "psk": "abba1221",
+      "ntp": false
+    },
+    "relay1": {
+      "name": "relay1",
+      "type": "RELAY",
+      "class": "output",
+      "pin": 16
+    },
+    "relay2": {
+      "name": "relay2",
+      "type": "RELAY",
+      "class": "output",
+      "pin": 17
+    },
+    "relay3": {
+      "name": "relay3",
+      "type": "RELAY",
+      "class": "output",
+      "pin": 14
+    },
+    "relay4": {
+      "name": "relay4",
+      "type": "RELAY",
+      "class": "output",
+      "pin": 27
+    },
+    "relay5": {
+      "name": "relay5",
+      "type": "RELAY",
+      "class": "output",
+      "pin": 26
+    },
+    "relay6": {
+      "name": "relay6",
+      "type": "RELAY",
+      "class": "output",
+      "pin": 25
+    },
+    "relay7": {
+      "name": "relay7",
+      "type": "RELAY",
+      "class": "output",
+      "pin": 33
+    },
+    "relay8": {
+      "name": "relay8",
+      "type": "RELAY",
+      "class": "output",
+      "pin": 32
+    }
+  },
+  "runtime": {
+    "mode": "deepsleep",
+    "params": {
+      "suffix": "RELAY",
+      "sleep": 0.3,
+      "mqtt_server": "espgate",
+      "mqtt_topic": "site/relay/house",
+      "test": "change3"
+    }
+  }
+}
